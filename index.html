@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Velvet &amp; Vow | Wedding décor, rentals &amp; all-inclusive packages, Trinidad</title>
+<meta name="description" content="Wedding design, event décor and rentals across Trinidad and Tobago. Draping, florals, chandeliers, fog and cold sparks, and all-inclusive packages from 50 to 150 guests. Concept site by Portside Digital.">
+<meta name="theme-color" content="#170c13">
+<meta property="og:title" content="Velvet &amp; Vow">
+<meta property="og:description" content="You bring the vows. We bring everything else.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Velvet and Vow home"><span class="b-v">Velvet</span><span class="b-amp">&amp;</span><span class="b-v">Vow</span></a>
+  <nav aria-label="Primary">
+    <a href="#room">The room</a><a href="#packages">Packages</a><a href="#rentals">Rentals</a><a href="#looks">Looks</a>
+  </nav>
+  <a href="#enquire" class="btn btn-gold btn-sm">Check your date</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO: velvet curtains part as you scroll -->
+  <section class="hero-wrap" aria-label="Introduction">
+    <div class="hero">
+      <div class="hero-img"><img src="img/hero.jpg" alt="Candle-lit ballroom with crystal chandeliers above round tables dressed in white" width="2200" height="1467" fetchpriority="high"></div>
+      <div class="hero-shade"></div>
+      <canvas class="sparks" id="heroSparks" aria-hidden="true"></canvas>
+
+      <div class="hero-copy">
+        <p class="kicker">Wedding design · Décor &amp; rentals · Trinidad &amp; Tobago</p>
+        <h1><span class="h-line">You bring</span> <span class="h-line"><em>the vows.</em></span></h1>
+        <p class="hero-sub">We bring the velvet, the roses, the chandeliers and the fog on the dance floor. Then we let you relax.</p>
+        <div class="hero-cta">
+          <a href="#packages" class="btn btn-gold">See packages</a>
+          <a href="#room" class="btn btn-ghost">Watch a room come alive <i class="ph ph-arrow-down"></i></a>
+        </div>
+      </div>
+
+      <div class="curtain c-left" aria-hidden="true"><span class="tie"></span></div>
+      <div class="curtain c-right" aria-hidden="true"><span class="tie"></span></div>
+      <div class="valance" aria-hidden="true"></div>
+      <div class="curtain-title" aria-hidden="true">
+        <span class="ct-script">your perfect day, styled by</span>
+        <span class="ct-name">Velvet <i>&amp;</i> Vow</span>
+        <span class="ct-hint"><i class="ph ph-mouse-scroll"></i> scroll to open</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="mq-track">
+      <span>Weddings</span><i>✦</i><span>Receptions</span><i>✦</i><span>Draping &amp; backdrops</span><i>✦</i><span>Flower walls</span><i>✦</i><span>Hindu weddings</span><i>✦</i><span>Fog &amp; cold sparks</span><i>✦</i><span>Beach ceremonies</span><i>✦</i><span>Birthdays &amp; showers</span><i>✦</i>
+      <span>Weddings</span><i>✦</i><span>Receptions</span><i>✦</i><span>Draping &amp; backdrops</span><i>✦</i><span>Flower walls</span><i>✦</i><span>Hindu weddings</span><i>✦</i><span>Fog &amp; cold sparks</span><i>✦</i><span>Beach ceremonies</span><i>✦</i><span>Birthdays &amp; showers</span><i>✦</i>
+    </div>
+  </div>
+
+  <section class="statement" aria-label="About Velvet and Vow">
+    <p class="st-script">since 2015</p>
+    <p class="words">Every couple gets one planner, one team and one number to call. We design the room, deliver every chair, hang every drape and stay until the last guest leaves.</p>
+    <ul class="stats">
+      <li><b>One</b><span>planner, first DM to last dance</span></li>
+      <li><b>All</b><span>décor, lighting, fog and sparks in-house</span></li>
+      <li><b>Zero</b><span>vendors for you to chase</span></li>
+    </ul>
+  </section>
+
+  <!-- THE ROOM: scroll builds a reception, then restyle it -->
+  <section class="room-sec" id="room" aria-label="Watch a room come together">
+    <div class="room-pin">
+      <div class="room-head">
+        <p class="kicker">The transformation</p>
+        <h2>From empty hall <em>to your perfect day.</em></h2>
+      </div>
+
+      <div class="room-stage" data-theme="black-gold">
+        <svg class="room" id="roomSvg" viewBox="0 0 1200 720" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a reception hall being decorated: draping, head table, guest tables, flowers, chandeliers, lighting, fog and cold sparks">
+          <defs>
+            <linearGradient id="gFold" x1="0" y1="0" x2="46" y2="0" spreadMethod="repeat" gradientUnits="userSpaceOnUse">
+              <stop offset="0" style="stop-color:var(--drape)"/>
+              <stop offset=".5" style="stop-color:var(--drape-hi)"/>
+              <stop offset="1" style="stop-color:var(--drape)"/>
+            </linearGradient>
+            <linearGradient id="gUp" x1="0" x2="0" y1="1" y2="0">
+              <stop offset="0" style="stop-color:var(--uplight);stop-opacity:.85"/>
+              <stop offset="1" style="stop-color:var(--uplight);stop-opacity:0"/>
+            </linearGradient>
+            <radialGradient id="gGlow">
+              <stop offset="0" stop-color="#fff6dc" stop-opacity=".9"/>
+              <stop offset=".35" stop-color="#ffd98a" stop-opacity=".35"/>
+              <stop offset="1" stop-color="#ffd98a" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="gFloor" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#fff" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#e9e4ea" stop-opacity=".95"/>
+            </linearGradient>
+            <filter id="fBlur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+            <filter id="fSoft"><feGaussianBlur stdDeviation="2.4"/></filter>
+          </defs>
+
+          <!-- base hall -->
+          <g id="r-base">
+            <rect width="1200" height="560" class="wall"/>
+            <rect y="540" width="1200" height="180" class="floor"/>
+            <line x1="0" x2="1200" y1="540" y2="540" class="floor-line"/>
+            <rect x="160" y="150" width="70" height="200" rx="35" class="window"/>
+            <rect x="970" y="150" width="70" height="200" rx="35" class="window"/>
+          </g>
+          <rect id="r-dim" width="1200" height="720" fill="#0b0610" opacity="0"/>
+
+          <!-- lighting (behind decor) -->
+          <g id="r-uplights" opacity="0"></g>
+
+          <!-- draping -->
+          <g id="r-drape">
+            <rect class="panel" x="0" y="0" width="150" height="560" fill="url(#gFold)"/>
+            <rect class="panel" x="1050" y="0" width="150" height="560" fill="url(#gFold)"/>
+            <path class="panel backdrop" d="M330 560 V170 Q600 60 870 170 V560 Z" fill="url(#gFold)"/>
+            <path class="bd-swag" d="M330 170 Q600 300 870 170 Q600 230 330 170 Z"/>
+            <g id="r-swags"></g>
+          </g>
+
+          <!-- head table -->
+          <g id="r-head">
+            <polygon class="dancefloor" points="420,560 780,560 880,720 320,720" fill="url(#gFloor)"/>
+            <text class="mono" x="600" y="668" text-anchor="middle">V &amp; V</text>
+            <g class="throne" transform="translate(540 440)"><path class="th-back" d="M-48 0 V-92 C-48 -150 48 -150 48 -92 V0 Z"/><path class="th-tuft" d="M-34 -10 V-88 C-34 -128 34 -128 34 -88 V-10 Z"/></g>
+            <g class="throne" transform="translate(660 440)"><path class="th-back" d="M-48 0 V-92 C-48 -150 48 -150 48 -92 V0 Z"/><path class="th-tuft" d="M-34 -10 V-88 C-34 -128 34 -128 34 -88 V-10 Z"/></g>
+            <g class="htable">
+              <rect x="380" y="424" width="440" height="16" rx="3" class="linen-top"/>
+              <rect x="390" y="438" width="420" height="104" class="linen"/>
+              <g class="pleats"></g>
+              <rect x="390" y="452" width="420" height="10" class="sash"/>
+            </g>
+          </g>
+
+          <!-- guest tables + chiavari chairs -->
+          <g id="r-guests"></g>
+
+          <!-- florals -->
+          <g id="r-flora"></g>
+
+          <!-- chandeliers -->
+          <g id="r-chand"></g>
+
+          <!-- fog + cold sparks -->
+          <g id="r-fx" opacity="0">
+            <g class="fog" filter="url(#fBlur)">
+              <ellipse cx="300" cy="692" rx="280" ry="52"/><ellipse cx="600" cy="676" rx="330" ry="44"/><ellipse cx="930" cy="692" rx="280" ry="50"/><ellipse cx="110" cy="706" rx="210" ry="44"/><ellipse cx="1100" cy="706" rx="210" ry="44"/><ellipse cx="600" cy="716" rx="520" ry="34"/>
+            </g>
+            <g id="r-sparks"></g>
+          </g>
+        </svg>
+
+        <ol class="room-steps" id="roomSteps">
+          <li class="on"><b>01</b><span>An empty hall</span></li>
+          <li><b>02</b><span>Draping &amp; backdrop</span></li>
+          <li><b>03</b><span>Head table &amp; thrones</span></li>
+          <li><b>04</b><span>Tables &amp; chiavari chairs</span></li>
+          <li><b>05</b><span>Florals</span></li>
+          <li><b>06</b><span>Chandeliers &amp; uplighting</span></li>
+          <li><b>07</b><span>Fog &amp; cold sparks</span></li>
+        </ol>
+        <div class="room-cap" id="roomCap" aria-live="polite">An empty hall. Plain walls, bare floor. Keep scrolling.</div>
+      </div>
+
+      <div class="themes" role="radiogroup" aria-label="Restyle the room">
+        <span class="th-label">Restyle it <i class="ph ph-sparkle"></i></span>
+        <button role="radio" aria-checked="true" data-theme="black-gold"><span class="sw" style="--a:#141014;--b:#d4b06a"></span>Black &amp; gold</button>
+        <button role="radio" aria-checked="false" data-theme="blush"><span class="sw" style="--a:#f3d2d6;--b:#e46b8b"></span>Blush dream</button>
+        <button role="radio" aria-checked="false" data-theme="red"><span class="sw" style="--a:#8e1027;--b:#f2c4cc"></span>Red romance</button>
+        <button role="radio" aria-checked="false" data-theme="royal"><span class="sw" style="--a:#3d1d63;--b:#c9c3dc"></span>Royal purple</button>
+        <button role="radio" aria-checked="false" data-theme="garden"><span class="sw" style="--a:#f6f1e6;--b:#6f8f5a"></span>Garden white</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="packages" id="packages" aria-labelledby="pk-h">
+    <div class="pk-intro">
+      <p class="kicker">All-inclusive</p>
+      <h2 id="pk-h">One price. <em>Every detail.</em></h2>
+      <p>Venue, food, décor, photos, lights and music, planned by one team. Pick your guest count and see it all at once.</p>
+    </div>
+
+    <div class="pk-card">
+      <div class="pk-left">
+        <div class="guests" role="radiogroup" aria-label="Number of guests">
+          <button role="radio" aria-checked="true" data-g="50" data-p="35000">50</button>
+          <button role="radio" aria-checked="false" data-g="75" data-p="45000">75</button>
+          <button role="radio" aria-checked="false" data-g="100" data-p="55000">100</button>
+          <button role="radio" aria-checked="false" data-g="150" data-p="70000">150</button>
+          <span class="g-pill" aria-hidden="true"></span>
+        </div>
+        <p class="g-lab">guests</p>
+        <div class="price"><span class="cur">TT$</span><span id="pkPrice">35,000</span></div>
+        <p class="per">about <b id="pkPer">$700</b> a guest, all in</p>
+        <div class="seats" id="seats" aria-hidden="true"></div>
+        <a href="#enquire" class="btn btn-wine pk-book" id="pkBook">Hold my date for 50 guests</a>
+        <p class="fine">Prices in TTD, at our partner hall in Tunapuna. Your own venue? We'll quote décor and rentals on their own.</p>
+      </div>
+      <ul class="incl">
+        <li><i class="ph-light ph-buildings"></i><div><b>A beautiful hall</b><span>Chandeliers, air-conditioning and parking, booked for you</span></div></li>
+        <li><i class="ph-light ph-fork-knife"></i><div><b>Gourmet catering</b><span>Buffet or plated, with a tasting before you sign</span></div></li>
+        <li><i class="ph-light ph-flower-lotus"></i><div><b>Full luxury décor &amp; florals</b><span>Draping, head table, centrepieces and a flower wall</span></div></li>
+        <li><i class="ph-light ph-camera"></i><div><b>Photography &amp; videography</b><span>From getting ready to the send-off</span></div></li>
+        <li><i class="ph-light ph-lightbulb-filament"></i><div><b>Lighting, fog &amp; cold sparks</b><span>Uplighting, a cloud for your first dance, spark fountains</span></div></li>
+        <li><i class="ph-light ph-speaker-hifi"></i><div><b>DJ with pro sound</b><span>Ceremony, speeches and the party after</span></div></li>
+        <li class="free"><i class="ph-light ph-clipboard-text"></i><div><b>Wedding coordination, free</b><span>A coordinator runs the day so you don't have to</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RENTALS: horizontal scroll + quote list -->
+  <section class="rentals" id="rentals" aria-labelledby="rn-h">
+    <div class="rn-pin">
+      <div class="rn-head">
+        <p class="kicker">Décor &amp; rentals</p>
+        <h2 id="rn-h">Planning it yourself? <em>Borrow our closet.</em></h2>
+        <p>Tap <b>Add</b> on anything you like and we'll send one quote for the lot.</p>
+      </div>
+      <div class="rn-track" id="rnTrack">
+        <article class="rn-card"><img src="img/gold-chairs.jpg" alt="Gold chiavari-style chairs around a round table set in pink" loading="lazy"><div class="rn-body"><span class="rn-n">01</span><h3>Chiavari chairs</h3><p>Gold, silver or clear, with cushions to match.</p><button class="rn-add" data-item="Chiavari chairs"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+        <article class="rn-card"><img src="img/red-stage.jpg" alt="Head-table stage with a white tufted sofa framed by red and white roses" loading="lazy"><div class="rn-body"><span class="rn-n">02</span><h3>Thrones &amp; sofa sets</h3><p>Tufted, gold-trimmed and ready for the photos.</p><button class="rn-add" data-item="Throne & sofa set"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+        <article class="rn-card"><img src="img/flower-wall.jpg" alt="Hot pink and white rose wall with a neon script sign" loading="lazy"><div class="rn-body"><span class="rn-n">03</span><h3>Flower walls</h3><p>Blush, white or red, with an optional neon sign.</p><button class="rn-add" data-item="Flower wall"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+        <article class="rn-card"><img src="img/blush-stage.jpg" alt="Soft blush fabric draped behind ivory sofas with cascading flowers" loading="lazy"><div class="rn-body"><span class="rn-n">04</span><h3>Backdrops &amp; draping</h3><p>Swags, sequins and ceiling drapes for any hall.</p><button class="rn-add" data-item="Backdrop & draping"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+        <article class="rn-card"><img src="img/centrepiece.jpg" alt="Low arrangement of white and blush roses beside a lit candle" loading="lazy"><div class="rn-body"><span class="rn-n">05</span><h3>Centrepieces</h3><p>Low and lush, or tall on gold stands.</p><button class="rn-add" data-item="Centrepieces"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+        <article class="rn-card"><img src="img/candelabra.jpg" alt="Tall crystal candelabra above a dark table ringed with rattan chairs" loading="lazy"><div class="rn-body"><span class="rn-n">06</span><h3>Candelabras</h3><p>Crystal and gold, for a room that glows.</p><button class="rn-add" data-item="Candelabras"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+        <article class="rn-card"><img src="img/floral-chandelier.jpg" alt="Hanging chandelier wrapped in peach and pink flowers" loading="lazy"><div class="rn-body"><span class="rn-n">07</span><h3>Floral chandeliers</h3><p>Flowers overhead, over the dance floor or the cake.</p><button class="rn-add" data-item="Floral chandelier"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+        <article class="rn-card"><img src="img/black-gold.jpg" alt="Black table linen with gold-rimmed chargers, crystal glasses and a table number" loading="lazy"><div class="rn-body"><span class="rn-n">08</span><h3>Chargers &amp; linens</h3><p>Gold-rim chargers, satin, sequin and velvet cloths.</p><button class="rn-add" data-item="Chargers & linens"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+        <article class="rn-card"><img src="img/sparklers.jpg" alt="Couple dancing while guests hold sparklers around them" loading="lazy"><div class="rn-body"><span class="rn-n">09</span><h3>Fog &amp; cold sparks</h3><p>Low fog for the first dance, spark fountains for the entrance.</p><button class="rn-add" data-item="Fog & cold sparks"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+        <article class="rn-card"><img src="img/beach-arch.jpg" alt="Flower-covered wedding arch on a beach at sunset" loading="lazy"><div class="rn-body"><span class="rn-n">10</span><h3>Arches</h3><p>Floral, draped or gold, on the sand or on the lawn.</p><button class="rn-add" data-item="Ceremony arch"><i class="ph-bold ph-plus"></i> Add</button></div></article>
+      </div>
+      <div class="rn-bar"><span id="rnBar"></span></div>
+    </div>
+  </section>
+
+  <!-- LOOKS: zoom grid -->
+  <section class="looks" id="looks" aria-labelledby="lk-h">
+    <div class="lk-pin">
+      <div class="lk-grid">
+        <figure class="lk lk-1"><img src="img/chandeliers.jpg" alt="Crystal chandeliers hanging among dark green foliage" loading="lazy"></figure>
+        <figure class="lk lk-2"><img src="img/flower-wall.jpg" alt="Pink rose flower wall" loading="lazy"></figure>
+        <figure class="lk lk-3"><img src="img/black-gold.jpg" alt="Black and gold table setting" loading="lazy"></figure>
+        <figure class="lk lk-4"><img src="img/couple.jpg" alt="Bride and groom embracing beside a white rose arch" loading="lazy"></figure>
+        <figure class="lk lk-c"><img src="img/red-stage.jpg" alt="Red and white rose head-table stage with a tufted sofa" loading="lazy">
+          <figcaption class="lk-cap"><p class="kicker">Looks we love</p><h2 id="lk-h">Five themes. <em>Endless rooms.</em></h2></figcaption>
+        </figure>
+        <figure class="lk lk-5"><img src="img/beach-aisle.jpg" alt="Beach ceremony aisle lined with flowers" loading="lazy"></figure>
+        <figure class="lk lk-6"><img src="img/cake.jpg" alt="Three-tier white cake with deep red roses" loading="lazy"></figure>
+        <figure class="lk lk-7"><img src="img/palm-venue.jpg" alt="Open-air venue with chandeliers hanging between palm trees" loading="lazy"></figure>
+        <figure class="lk lk-8"><img src="img/garden-stage.jpg" alt="Garden-style stage with blush drapes and floral pillars" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="events" aria-labelledby="ev-h">
+    <div class="ev-head">
+      <p class="kicker">Not only weddings</p>
+      <h2 id="ev-h">Every reason <em>to dress a room.</em></h2>
+    </div>
+    <div class="ev-grid">
+      <a href="#enquire" class="ev" data-type="Hindu wedding"><img src="img/hindu-wedding.jpg" alt="Hindu bride and groom on a decorated stage with cold sparks rising behind them" loading="lazy"><div><h3>Hindu weddings</h3><p>Mandaps, marigolds and cold sparks for the jaimala.</p></div></a>
+      <a href="#enquire" class="ev" data-type="Beach ceremony"><img src="img/beach-arch.jpg" alt="Floral arch on the beach" loading="lazy"><div><h3>Beach ceremonies</h3><p>Arches, aisles and chairs carried right to the sand.</p></div></a>
+      <a href="#enquire" class="ev" data-type="Birthday"><img src="img/birthday.jpg" alt="Pink and red birthday tablescape with a floral backdrop" loading="lazy"><div><h3>Birthdays &amp; milestones</h3><p>Sweet sixteens, fiftieths and everything between.</p></div></a>
+      <a href="#enquire" class="ev" data-type="Baby or bridal shower"><img src="img/balloons.jpg" alt="White and clear balloon display on a table" loading="lazy"><div><h3>Showers &amp; reveals</h3><p>Balloon installs, dessert tables and backdrops.</p></div></a>
+      <a href="#enquire" class="ev" data-type="Anniversary dinner"><img src="img/dining-room.jpg" alt="Elegant dining room with round tables and chandeliers" loading="lazy"><div><h3>Anniversaries &amp; dinners</h3><p>An intimate table for twelve, or a gala for two hundred.</p></div></a>
+      <a href="#enquire" class="ev" data-type="Corporate event"><img src="img/palm-venue.jpg" alt="Palm-lined open-air venue lit by chandeliers" loading="lazy"><div><h3>Corporate &amp; galas</h3><p>Awards nights, launches and Christmas functions.</p></div></a>
+    </div>
+  </section>
+
+  <!-- PROCESS: gold thread draws as you scroll -->
+  <section class="process" aria-labelledby="pr-h">
+    <div class="pr-head">
+      <p class="kicker">How it works</p>
+      <h2 id="pr-h">First message <em>to last dance.</em></h2>
+    </div>
+    <div class="pr-wrap">
+      <svg class="thread" viewBox="0 0 120 1000" preserveAspectRatio="none" aria-hidden="true"><path d="M60 0 C 110 120, 10 230, 60 340 S 110 560, 60 670 S 10 880, 60 1000"/></svg>
+      <ol class="pr-steps">
+        <li><span class="pr-n">01</span><h3>Say hello</h3><p>Send your date, guest count and a few photos you love. We reply the same day with ideas and a ballpark.</p></li>
+        <li><span class="pr-n">02</span><h3>Design &amp; mood board</h3><p>We walk your venue, pick the palette and show you the room before a single chair moves.</p></li>
+        <li><span class="pr-n">03</span><h3>We set, you get ready</h3><p>Our crew arrives early and dresses the hall top to bottom while you're still in the makeup chair.</p></li>
+        <li><span class="pr-n">04</span><h3>Dance. We'll pack up.</h3><p>A coordinator runs the night. When the music stops, we strike the room and you go home.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ENQUIRE: live WhatsApp preview -->
+  <section class="enquire" id="enquire" aria-labelledby="eq-h">
+    <canvas class="petals" id="petals" aria-hidden="true"></canvas>
+    <div class="eq-inner">
+      <div class="eq-copy">
+        <p class="kicker">Bookings open</p>
+        <h2 id="eq-h">Is your date <em>still free?</em></h2>
+        <p>Tell us a little and your message is ready to send. Weekends in wedding season go fast.</p>
+        <div class="bubble" aria-live="polite">
+          <div class="bubble-top"><i class="ph-fill ph-whatsapp-logo"></i> Message preview</div>
+          <p id="waPreview"></p>
+          <span class="bubble-time">now <i class="ph-bold ph-checks"></i></span>
+        </div>
+      </div>
+      <form class="eq-form" id="eqForm" novalidate>
+        <label>Your names<input name="names" autocomplete="name" placeholder="Kerry-Ann &amp; Marcus"></label>
+        <div class="row">
+          <label>Date<input type="date" name="date"></label>
+          <label>Guests
+            <select name="guests"><option>50</option><option>75</option><option>100</option><option>150</option><option>150+</option></select>
+          </label>
+        </div>
+        <div class="row">
+          <label>Occasion
+            <select name="type"><option>Wedding</option><option>Hindu wedding</option><option>Beach ceremony</option><option>Birthday</option><option>Baby or bridal shower</option><option>Anniversary dinner</option><option>Corporate event</option></select>
+          </label>
+          <label>Theme
+            <select name="theme"><option value="black-gold">Black &amp; gold</option><option value="blush">Blush dream</option><option value="red">Red romance</option><option value="royal">Royal purple</option><option value="garden">Garden white</option></select>
+          </label>
+        </div>
+        <fieldset class="seg">
+          <legend>What you need</legend>
+          <label><input type="radio" name="need" value="an all-inclusive package" checked><span>All-inclusive</span></label>
+          <label><input type="radio" name="need" value="décor and rentals only"><span>Décor &amp; rentals</span></label>
+        </fieldset>
+        <label>Anything else?<textarea name="notes" rows="2" placeholder="Venue, colours, a photo you love…"></textarea></label>
+        <p class="quote-line" id="quoteLine" hidden></p>
+        <button class="btn btn-gold btn-wide" type="submit"><i class="ph-fill ph-whatsapp-logo"></i> Send on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="f-brand"><span class="b-v">Velvet</span><span class="b-amp">&amp;</span><span class="b-v">Vow</span></div>
+  <p class="f-tag">Wedding design, décor &amp; rentals. St Augustine, serving all of Trinidad &amp; Tobago.</p>
+  <div class="f-links">
+    <button class="demo" data-msg="Demo: on the live site this calls the business directly."><i class="ph ph-phone"></i> Call</button>
+    <button class="demo" data-msg="Demo: on the live site this opens a WhatsApp chat with the business."><i class="ph ph-whatsapp-logo"></i> WhatsApp</button>
+    <button class="demo" data-msg="Demo: links to Instagram on the live site." aria-label="Instagram"><i class="ph ph-instagram-logo"></i></button>
+    <button class="demo" data-msg="Demo: links to Facebook on the live site." aria-label="Facebook"><i class="ph ph-facebook-logo"></i></button>
+  </div>
+  <p class="foot-small"><b>Velvet &amp; Vow</b> is a fictional business. Concept site designed and built by Portside Digital. Photos from Unsplash.</p>
+</footer>
+
+<!-- quote tray -->
+<button class="tray" id="tray" hidden aria-controls="enquire"><i class="ph-fill ph-list-heart"></i> <span id="trayN">0</span> in your quote <i class="ph-bold ph-arrow-right"></i></button>
+
+<div class="dock" aria-label="Quick actions">
+  <button class="dock-b demo" data-msg="Demo: on the live site this calls the business directly." aria-label="Call"><i class="ph-fill ph-phone"></i></button>
+  <a class="dock-main" href="#enquire">Check your date</a>
+  <button class="dock-b demo" data-msg="Demo: on the live site this opens a WhatsApp chat with the business." aria-label="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<a class="pd-ribbon" href="https://wa.me/18682591409?text=Hi%20Portside%20Digital%2C%20I%20saw%20the%20Velvet%20%26%20Vow%20demo%20and%20want%20a%20site%20like%20it." target="_blank" rel="noopener">Concept site by <b>Portside Digital</b>. Want one like this?</a>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
